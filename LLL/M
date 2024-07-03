@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body class="music">
+<header>
+    <h1>Music Player</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="player">
+        <div class="vinyl">
+            <img src="css/IMG_1920.JPG" alt="Vinyl Record">
+        </div>
+        <div class="lyrics">
+            <p>Sample lyrics line 1</p>
+            <p>Sample lyrics line 2</p>
+            <p>Sample lyrics line 3</p>
+            <!-- Add more lyrics lines as needed -->
+        </div>
+        <div class="controls">
+            <button class="play-pause">Play/Pause</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Simple Website. All rights reserved.</p>
+</footer>
+
+<script src="sketch.js"></script>
+
+</body>
+</html>
