@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Responsive Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="images">
+<header>
+    <h1>Images</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="img.html">Images</a></li>
+        <li><a href="Video.html">Videos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div id="sketch-holder"></div>
+    <canvas id="myCanvas"></canvas>
+    <div class="gallery">
+        <a href="img1-3/img/Lengdong.png" target="_blank"><img src="img1-3/img/Lengdong.png" alt="Image 1"></a>
+        <a href="img1-3/img1/MJ.png" target="_blank"><img src="img1-3/img1/MJ.png" alt="Image 2"></a>
+        <a href="img1-3/img2/GPT.jpeg" target="_blank"><img src="img1-3/img2/GPT.jpeg" alt="Image 3"></a>
+        <a href="img1-3/s/y.JPG" target="_blank"><img src="img1-3/s/y.JPG" alt="Image 4"></a>
+        <a href="img1-3/z/t.jpg" target="_blank"><img src="img1-3/z/t.jpg" alt="Image 5"></a>
+        <a href="img1-3/wen/一_2614.png" target="_blank"><img src="img1-3/wen/一_2614.png" alt="Image 6"></a>
+        <a href="img1-3/t/二_2616.png" target="_blank"><img src="img1-3/t/二_2616.png" alt="Image 7"></a>
+        <a href="img1-3/san/三_2613.png" target="_blank"><img src="img1-3/san/三_2613.png" alt="Image 8"></a>
+        <a href="img1-3/yo/四.png" target="_blank"><img src="img1-3/yo/四.png" alt="Image 9"></a>
+        <a href="img1-3/ni/五_2618.png" target="_blank"><img src="img1-3/ni/五_2618.png" alt="Image 10"></a>
+        <a href="path/to/your/large-image5.jpg" target="_blank"><img src="path/to/your/image5.jpg" alt="Image 11"></a>
+        <a href="path/to/your/large-image6.jpg" target="_blank"><img src="path/to/your/image6.jpg" alt="Image 12"></a>
+        <a href="path/to/your/large-image7.jpg" target="_blank"><img src="path/to/your/image7.jpg" alt="Image 13"></a>
+        <a href="path/to/your/large-image8.jpg" target="_blank"><img src="path/to/your/image8.jpg" alt="Image 14"></a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Simple Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const context = canvas.getContext('2d');
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth * 0.8;  // Adjust the size as needed
+        canvas.height = window.innerHeight * 0.5; // Adjust the size as needed
+        context.fillStyle = 'lightgrey';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas(); // Initial call to set canvas size
+
+</script>
+</body>
+</html>
